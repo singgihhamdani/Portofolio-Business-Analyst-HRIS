@@ -1,0 +1,51 @@
+employee_id,name,department,job_title,join_date,status
+EMP001,Pegawai Operations 1,Operations,Ops Staff,2022-02-18,Active
+EMP002,Pegawai Tech 2,Tech,Frontend Dev,2023-04-23,Active
+EMP003,Pegawai Sales 3,Sales,Sales Exec,2024-04-25,Active
+EMP004,Pegawai Tech 4,Tech,Data Analyst,2025-04-28,Active
+EMP005,Pegawai Sales 5,Sales,Account Mgr,2021-08-21,Active
+EMP006,Pegawai Tech 6,Tech,Backend Dev,2021-06-07,Resign
+EMP007,Pegawai Tech 7,Tech,Data Analyst,2023-11-06,Active
+EMP008,Pegawai Operations 8,Operations,Ops Manager,2020-03-15,Active
+EMP009,Pegawai Finance 9,Finance,Finance Analyst,2024-12-18,Active
+EMP010,Pegawai HR 10,HR,HR Mgr,2021-01-08,Active
+EMP011,Pegawai Sales 11,Sales,Account Mgr,2022-05-03,Active
+EMP012,Pegawai HR 12,HR,HR Mgr,2024-06-07,Active
+EMP013,Pegawai Finance 13,Finance,Finance Analyst,2024-08-05,Active
+EMP014,Pegawai Tech 14,Tech,Backend Dev,2020-12-18,Active
+EMP015,Pegawai Operations 15,Operations,Logistic Coord,2024-10-14,Active
+EMP016,Pegawai Operations 16,Operations,Logistic Coord,2021-04-05,Active
+EMP017,Pegawai Operations 17,Operations,Logistic Coord,2019-01-28,Active
+EMP018,Pegawai Sales 18,Sales,Sales Exec,2024-03-26,Active
+EMP019,Pegawai Finance 19,Finance,CFO,2019-07-13,Active
+EMP020,Pegawai Operations 20,Operations,Logistic Coord,2023-05-18,Active
+EMP021,Pegawai Sales 21,Sales,VP Sales,2024-02-22,Resign
+EMP022,Pegawai Operations 22,Operations,Logistic Coord,2025-11-11,Active
+EMP023,Pegawai Sales 23,Sales,Account Mgr,2022-03-15,Active
+EMP024,Pegawai Sales 24,Sales,VP Sales,2024-05-17,Resign
+EMP025,Pegawai HR 25,HR,HR Mgr,2019-11-10,Active
+EMP026,Pegawai Operations 26,Operations,Ops Manager,2020-03-12,Active
+EMP027,Pegawai HR 27,HR,HR Mgr,2025-09-01,Active
+EMP028,Pegawai Operations 28,Operations,Logistic Coord,2022-01-04,Active
+EMP029,Pegawai Tech 29,Tech,Frontend Dev,2020-01-08,Active
+EMP030,Pegawai Operations 30,Operations,Ops Staff,2019-12-16,Resign
+EMP031,Pegawai Sales 31,Sales,VP Sales,2025-03-05,Resign
+EMP032,Pegawai Finance 32,Finance,CFO,2020-05-17,Active
+EMP033,Pegawai Operations 33,Operations,Logistic Coord,2020-09-25,Active
+EMP034,Pegawai HR 34,HR,HR Mgr,2021-07-22,Resign
+EMP035,Pegawai Tech 35,Tech,Tech Lead,2023-08-04,Active
+EMP036,Pegawai HR 36,HR,HR Admin,2019-06-01,Resign
+EMP037,Pegawai Operations 37,Operations,Ops Manager,2020-10-08,Resign
+EMP038,Pegawai Sales 38,Sales,Sales Exec,2024-11-02,Active
+EMP039,Pegawai HR 39,HR,HR Admin,2019-06-03,Active
+EMP040,Pegawai Operations 40,Operations,Ops Staff,2021-11-16,Active
+EMP041,Pegawai HR 41,HR,HR Mgr,2020-12-19,Active
+EMP042,Pegawai Operations 42,Operations,Logistic Coord,2020-08-26,Active
+EMP043,Pegawai Finance 43,Finance,Accountant,2019-02-22,Active
+EMP044,Pegawai Finance 44,Finance,Finance Analyst,2022-07-15,Active
+EMP045,Pegawai Sales 45,Sales,VP Sales,2024-11-04,Active
+EMP046,Pegawai Sales 46,Sales,Account Mgr,2024-06-26,Active
+EMP047,Pegawai Sales 47,Sales,Sales Exec,2020-04-18,Active
+EMP048,Pegawai Finance 48,Finance,Accountant,2022-03-09,Active
+EMP049,Pegawai Finance 49,Finance,Accountant,2025-02-15,Active
+EMP050,Pegawai Operations 50,Operations,Ops Staff,2019-11-18,Active

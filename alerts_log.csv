@@ -1,0 +1,6 @@
+timestamp,type,reference_id,message
+2026-03-01 08:30:00,late,EMP001,Employee EMP001 has been late more than 3 times this week
+2026-03-01 08:30:00,late,EMP007,Employee EMP007 has been late more than 3 times this week
+2026-03-02 09:00:00,absent,EMP012,Employee EMP012 is marked absent without check-in
+2026-03-03 10:15:00,candidate_stuck,CAND045,Candidate CAND045 has been in Interview stage for more than 5 days
+2026-03-04 08:30:00,late,EMP003,Employee EMP003 has been late more than 3 times this week
