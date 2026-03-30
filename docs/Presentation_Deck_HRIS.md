@@ -8,7 +8,7 @@
 ## Slide 1: Title Slide
 *   **Title (Besar):** HR Analytics & Automation System
 *   **Subtitle:** Transforming Manual HR Operations into Data-Driven & Automated Ecosystems
-*   **Nama Anda:** [Nama Anda]
+*   **Nama Anda:** Singgih Hamdani Ma'ruf
 *   **Role Target:** Business Analyst / Product Manager Candidate
 *   **Visual:** Ilustrasi vektor simpel atau logo minimalis yang melambangkan integrasi data & orang (*people*).
 
@@ -37,7 +37,8 @@
 ## Slide 4: Proposed Solution & Product Strategy
 *   **Title Slide:** The TO-BE Solution: Centralized, Automated, Insightful
 *   **Product Thinking Strategy:**
-    *   Membangun arsitektur *Cloud-Native Lightweight* menggunakan Google Workspace & Python sebagai fondasi awal sebelum *scaling* ke SQL & BI Tools.
+    *   Membangun arsitektur *Hybrid Lightweight* menggunakan Google Workspace (Apps Script) untuk *ingestion* dan Python untuk *deep analytics*.
+    *   **Keamanan Eksekutif:** Pendekatan spesifik merender *Jupyter Notebook* menjadi sebuah antarmuka **Single-Page Application (SPA) HTML statik**, menjanjikan tata kelola *Role-Based Access Control* (RBAC) nol-kode untuk deretan C-Level.
     *   Pendekatan MVP (Minimum Viable Product): Fokus menyelesaikan rasa sakit terbesar (*Late alerts* & *Payroll readiness*).
 *   **Visual:** Panah dari kondisi kacau (kiri) menuju ikon "*Gear/Automation*" dan Dashboard terstruktur (kanan).
 
@@ -45,9 +46,9 @@
 
 ## Slide 5: System Architecture & Data Flow
 *   **Title Slide:** Technical Architecture
-*   **Flowchart Visual (Gambarkan ulang secara simpel / Masukkan screenshot diagram Mermaid BRD):**
-    *   *Data Source* (CSV Fingerprint / Form) ➔ *Storage* (Google Sheets Hub) ➔ *Processing* (ETL Python & GAS) ➔ *Output* (Python Dashboards & Email Alerts).
-*   **Key Talking Point:** "Sebagai Business Analyst, saya merancang arsitektur ini agar data terjamin bersih (*Data Integrity*) sebelum diekspor ke sistem Payload Gaji/Payroll pihak ketiga (misal: gaji.id)."
+*   **Flowchart Visual:**
+    *   *Data Source* (CSV Fingerprint) ➔ *Storage* (Google Sheets Hub / CSV Master) ➔ *Processing* (ETL Python & GAS) ➔ *Output* (HTML Dashboard & Email Alerts).
+*   **Key Talking Point:** "Sebagai Data/System Analyst, saya merancang arsitektur ini agar data CSV mentah terjamin bersih (*Data Integrity*) melalui pipeline Python sebelum dirender menjadi dasbor. Parameter otomatisasi peringatan di-ekstrak secara dinamis, sehingga HR tidak perlu mengubah *source-code*."
 
 ---
 
@@ -61,13 +62,14 @@
 
 ---
 
-## Slide 7: Key Deliverable 2 - Executive Dashboard
-*   **Title Slide:** Data-Driven Decision Making (Python Analytics)
-*   **Actionable Visual:** *[INSERT SCREENSHOT HTML CARDS SCORECARD DAN PLOTLY CHART]*
+## Slide 7: Key Deliverable 2 - Executive Dashboard (RBAC)
+*   **Title Slide:** Data-Driven Decision Making (Python Analytics UI)
+*   **Actionable Visual:** *[INSERT SCREENSHOT EXECUTIVE DASHBOARD RBAC HTML]*
 *   **Talking Points (Highlight Business Insight):**
     *   *Jangan jelaskan kodenya, jelaskan dampaknya!*
-    *   "Saya merancang *Overview Scorecard* agar C-Level bisa melihat *Red Flags* (misal: Turnover menyentuh 16%)."
-    *   "Saya menambahkan Funnel Rekrutmen untuk menemukan bahwa *Drop-off* terbesar terjadi di tahap Screening menuju Interview, mengindikasikan perlunya kalibrasi kualifikasi CV."
+    *   "Saya memisahkan *analytics engine* dari Layer Presentasi. C-Level hanya mengakses Dasbor Statis berbasis Tab (Executive, Recruitment, Cost)."
+    *   **Cost Insight:** "Grafik *Overtime Burden* membuktikan bahwa departemen **Tech & Ops membakar anggaran >Rp 30 Juta/bulan**. Jauh lebih hemat merekrut +2 Backend Engineer baru daripada membayar lembur kelelahan."
+    *   **Recruitment Insight:** "Corong rekrutmen melacak *Drop-off* terbesar (ribuan kandidat gagal) terjadi di fase *Screening* menuju *Interview*, mengindikasikan HR membuang waktu menyeleksi profil sampah akibat parameter loker yang terlalu longgar."
 
 ---
 
@@ -95,6 +97,6 @@
 *   **Title Slide:** Thank You
 *   **Isi:** 
     *   "Open for Technical Interview & Deep-Dive Discussions."
-    *   [Nomor Telepon] | [Email]
-    *   [URL GitHub / Repositori Proyek] | [URL LinkedIn]
+    *   +62 881-0108-90925 | singgihhamdani4@gmail.com
+    *   [GitHub](https://github.com/singgihhamdani/Portofolio-Business-Analyst-HRIS) | [LinkedIn](https://www.linkedin.com/in/singgihhamdani/)
 *   **Visual:** QR Code menuju GitHub Repository proyek ini yang berisi file README + Notebook.

@@ -9,13 +9,13 @@
 
 ### 1. Executive Summary
 **Ringkasan Proyek:**  
-Proyek ini bertujuan untuk membangun Sistem HR Analytics & Automation tangkas guna mentransformasi alur manajemen SDM dari metode konvensional (*spreadsheet base*) menjadi basis arsitektur otomatis lintas-*platform*. Mengawinkan kapabilitas skrip *Google Apps Script (GAS)* untuk memotong proses data mentah (ETL pipeline) dan bahasa Pemrograman *Python* untuk melahirkan wawasan Analitik Diagnostik visual (*Real-Time Dashboard*).
+Proyek ini membangun Sistem HR Analytics & Automation untuk mentransformasi manajemen SDM dari metode konvensional (spreadsheet manual) menjadi ekosistem otomatis. Menggunakan *Google Apps Script (GAS)* untuk ETL pipeline data mentah dan *Python* untuk menghasilkan Dashboard Analitik interaktif.
 
 **Masalah Utama:**  
-Tim HR terjebak pada rawa administratif (>30% *operational redundancy*). Mulai dari menyusun fail presensi harian terpisah ke lembar laporan gajian, memantau riwayat komunikasi rekrutmen via WhatsApp yang terputus, hingga proses evaluasi yang sangat reaktif. Minimnya sentralisasi data dan kapabilitas wawasan instan membuat eksekutif melangkah buta dalam melihat *trend* *Turnover* karyawan maupun lonjakan biaya *Overtime*.
+Tim HR menghabiskan >30% waktu operasional untuk tugas administratif berulang: kompilasi presensi manual, pelacakan rekrutmen via WhatsApp yang tidak terstruktur, dan evaluasi kinerja yang bersifat reaktif. Tidak ada sentralisasi data, sehingga manajemen tidak dapat melihat tren *Turnover* atau lonjakan biaya *Overtime* secara real-time.
 
 **Solusi yang Diusulkan:**  
-Implementasi *Centralized Data Hub* HR untuk mengawal pergerakan data absensi dengan kepekaan sistem notifikasi dini (Alerting) atas ketidakdisiplinan/keterlambatan. Memadukannya pada modul pelacakan *Funnel* Rekrutmen interaktif. Sistem juga dirancang mengekspor ringkasan presensi "siap hitung" per bulan ke Modul Perangkat Gaji Pihak Ketiga dengan deviasi hitung 0%.
+Implementasi *Centralized Data Hub* HR yang mencakup: (1) Sistem notifikasi otomatis untuk keterlambatan karyawan, (2) Modul pelacakan *Funnel* Rekrutmen interaktif, dan (3) Ekspor ringkasan presensi "siap hitung" ke Sistem Payroll pihak ketiga dengan akurasi 100%.
 
 ---
 
@@ -35,13 +35,13 @@ Biaya upah jam tambahan seringkali tak tergambar akurat dengan luaran pendapatan
 
 ### 3. Objectives
 **Tujuan Makro Bisnis (ROI Goals):**
-- Merampingkan durasi rutinitas perakitan laporan metrik karyawan harian sebesar **85%** (Menukik dari estimasi rata-rata 24 jam/bulan hingga di bawah < 4 jam/bulan).
-- Melancarkan pergerakan akselerometer laju siklus *pipeline* penerimaan (*Applicant Phase Turnaround*).
+- Memangkas waktu kompilasi laporan HR sebesar **85%** (dari ~24 jam/bulan menjadi <4 jam/bulan).
+- Mempercepat siklus rekrutmen (*Time-to-Hire*) melalui deteksi bottleneck otomatis.
 
 **Tujuan Mikro Fungsional Sistem:**
-- Berdikari menyatukan integrasi Data Mentah ke dalam wadah *Single Source of Truth*.
-- Pengambilan *trigger email alert* terhadap celah penyelewengan protokol jadwal karyawan.
-- Melahirkan ekosistem *Dashboard Data Storytelling* sebagai kokpit C-Level.
+- Menyatukan seluruh data HR ke dalam *Single Source of Truth*.
+- Mengaktifkan *email alert* otomatis untuk pelanggaran kedisiplinan karyawan.
+- Membangun *Executive Dashboard* interaktif sebagai pusat pengambilan keputusan.
 
 ---
 
@@ -176,9 +176,9 @@ Manajemen matriks keamanan hirarki sistem, ditegakkan agar mencegah sentuhan yan
 
 ### 10. Data Requirements
 **Struktur Atribut Inti Relasi Kolom:**
-1. **Employee Profile (Dim):** *Employee ID, Candidate Name, Full Department, Job Title, Valid Joining Batch Date, Current Status (Resign/Active/Probation).*
-2. **Attendance Journal (Fact):** *Calendar Date, Employee ID, Recorded Login/Logout Timestamp, Summarized Expected Target Hours, Verified Total Overtime Minutes, Current Status Categories (L/Late, A/Absent, E/Excused Leave).*
-3. **Pipeline Applicant:** *Tracking ID Number, Applied Tier Route (Fase Wawancara 1/Sourcing dll), Progression Timestamp, Track Lead Conversion Medium.*
+1. **Employee Profile (Dim):** `employee_id` (PK), `name`, `department`, `job_title`, `join_date`, `status` (Active/Resign).
+2. **Attendance Journal (Fact):** `date`, `employee_id` (FK), `check_in`, `check_out`, `status` (present/late/absent), `overtime_minutes`.
+3. **Pipeline Applicant:** `candidate_id`, `position`, `department`, `stage` (Applied/Screening/Interview/Offering/Hired), `stage_timestamp`, `status` (Active/Passed/Rejected/Hired).
 
 ---
 

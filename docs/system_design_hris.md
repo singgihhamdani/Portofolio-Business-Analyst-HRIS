@@ -21,8 +21,9 @@ Arsitektur dirancang menggunakan pendekatan *Cloud-Native Lightweight* dengan 6 
 1. **Data Source Layer**
    - *Biometric Fingerprint Log:* File `.csv` yang diekspor mingguan/harian.
    - *Google Forms/Job Portal:* *Webhook* dari pengisian formulir cuti atau pendaftaran rekrutmen.
-2. **Data Storage Layer (Lightweight RDBMS)**
-   - *Google Sheets:* Berperan sebagai database relasional awan terpusat (limit 10 juta sel) yang menampung *Fact Table* dan *Dimension Table*. Sangat mudah diakses untuk *manual override* oleh HR.
+2. **Data Storage Layer (Hybrid Approach)**
+   - *Google Sheets:* Berperan sebagai database operasional awan (cloud) untuk trigger notifikasi, menampung tabel `processed_attendance`, dan `config_params` yang memuat parameter fleksibel untuk operasional HR (seperti threshold telat mingguan).
+   - *Local CSV (Portfolio Mode):* Bertindak sebagai artefak representasi data universal antara Python ETL dan GAS Pipeline. Berfungsi sebagai salinan master data historis.
 3. **Data Processing Layer (ETL Engine)**
    - *Google Apps Script (GAS):* Menjadi mesin penggerak (*Cron Job*) yang menangani logika *Data Cleaning* dasar (deduplikasi data, konversi zona waktu).
    - *Python (Pandas):* Melakukan transformasi rumit (*Data Wrangling* lanjutan) seperti agregasi total *turnover* dan kalkulasi selisih jam lembur pada memori terdedikasi.
@@ -31,7 +32,8 @@ Arsitektur dirancang menggunakan pendekatan *Cloud-Native Lightweight* dengan 6 
 5. **Analytics Layer**
    - *Python Math Logic:* Menyimpan definisi rumus (*Attendance Rate, Turnover Rate, Time-to-Hire*) dan melakukan grup komputasi kalkulus pada Dataframe.
 6. **Presentation Layer (User Interface)**
-   - *Streamlit / Dash Framework:* Mem-parsing hasil *Dataframe Analytics* menjadi Dasbor web interaktif berbasis HTML/JS yang bisa diakses Manajemen via *browser*.
+   - *Python Analytics & Jupyter:* Layer komputasi ETL yang mensupply data ke visual front-end.
+   - *Standalone Executive HTML Dashboard:* Hasil kompilasi Plotly Charts dari kernel Python yang diekspor menjadi single file UI `Executive_Dashboard_RBAC.html`. Di sinilah konsep isolasi data murni dijalankan (Executive mode - _Read Only_ tanpa akses *Source Code*).
 
 ---
 
@@ -137,9 +139,11 @@ Dasbor disajikan dengan struktur komponen yang jelas tanpa ambiguitas ruang:
 ### 7. Automation Flow (Google Apps Script Logic)
 Logika diimplementasikan secara statis tanpa intervensi *server-side user* biasa:
 
-1. **Daily Ingestion Job (CRON Trigger: Pukul 23:59)**
+1. **Dynamic Config Loader (Startup Job)**
+   - Skrip `loadSystemConfig()` meload parameter `LATE_THRESHOLD` dan limit cuti/stagnasi dari lembar konfigurasi Spreadsheet `config_params`. Ini membebaskan HR dari kewajiban berurusan dengan source-code.
+2. **Daily Ingestion Job (CRON Trigger: Pukul 23:59)**
    - Algoritma melakukan *Fetch* data terbaru dari titik terminal API/folder hari ini.
-   - Melakukan eksekusi modul *Data Cleaning* DFD (Bagian 3A) lalu *Array map* menembakkan `Sheet.appendRow()` menuju *Master Tabel*.
+   - Melakukan eksekusi modul *Data Cleaning* DFD lalu *Array map* menembakkan `Sheet.appendRow()`.
 2. **Indiscipline Alert Check (CRON Trigger: Pukul 08:30 Hari Kerja)**
    - *Logic Query:* Mencari baris dengan ID karyawan yang berstatus `is_Late = TRUE` ATAU `status_id = 'Alfa'`. Lalu melancarkan hitung mundur rekaman 7 hari terakhir dari ID terkait. Jika bernilai `>= 3`, ambil Alamat Email atasan terdafar.
    - *Output:* Eksekusi `MailApp.sendEmail()` membawakan Templat Rangkuman HTML ke Atasan berisi NIK, Nama, dan detil hari telat.

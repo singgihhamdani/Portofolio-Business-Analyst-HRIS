@@ -1,0 +1,51 @@
+employee_id,name,department,job_title,base_salary,overtime_eligible,join_date,status
+EMP001,Andi Setiawan,Operations,Ops Staff,9000000,True,2022-02-18,Active
+EMP002,Budi Darmawan,Tech,Backend Dev,6000000,True,2024-02-02,Active
+EMP003,Citra Hartono,Tech,Data Analyst,8000000,True,2020-02-13,Active
+EMP004,Dewi Darmawan,Tech,Backend Dev,7000000,True,2021-06-07,Active
+EMP005,Eko Gunawan,Sales,VP Sales,6000000,True,2024-03-18,Active
+EMP006,Fajar Safitri,HR,Recruitment Spec,9000000,True,2022-05-21,Resign
+EMP007,Gita Susanto,HR,HR Mgr,5000000,True,2021-01-08,Active
+EMP008,Hendra Iskandar,Tech,Tech Lead,14000000,True,2021-02-07,Active
+EMP009,Indah Cahyani,Tech,Backend Dev,8000000,True,2024-08-13,Active
+EMP010,Joko Firmansyah,HR,Recruitment Spec,9000000,True,2020-04-24,Active
+EMP011,Kartika Permana,Tech,Tech Lead,11000000,True,2023-07-12,Active
+EMP012,Lukman Saputra,Operations,Logistic Coord,6000000,True,2019-01-28,Active
+EMP013,Maya Purnama,HR,HR Mgr,8000000,True,2022-10-03,Active
+EMP014,Nadia Prasetyo,Operations,Logistic Coord,5000000,True,2023-05-18,Active
+EMP015,Oscar Maharani,Sales,VP Sales,7000000,True,2023-05-25,Active
+EMP016,Putri Pratama,Sales,Account Mgr,7000000,True,2022-03-15,Active
+EMP017,Qori Maharani,Operations,Ops Staff,7000000,True,2023-02-28,Active
+EMP018,Reza Hakim,Operations,Ops Manager,17000000,False,2020-03-12,Active
+EMP019,Sari Ramadhan,Operations,Ops Manager,15000000,False,2019-10-11,Active
+EMP020,Taufik Permana,Sales,Account Mgr,9000000,True,2021-04-02,Active
+EMP021,Umar Kusuma,Sales,Sales Exec,9000000,True,2024-08-27,Resign
+EMP022,Vina Nugraha,HR,HR Admin,7000000,True,2024-08-18,Active
+EMP023,Wahyu Hakim,Operations,Ops Manager,18000000,False,2022-04-18,Active
+EMP024,Xena Suryadi,Tech,Tech Lead,14000000,True,2024-11-12,Resign
+EMP025,Yoga Rahayu,Finance,Accountant,5000000,True,2020-04-03,Active
+EMP026,Zahra Pratama,Operations,Ops Manager,16000000,False,2020-10-08,Active
+EMP027,Arief Rahayu,Sales,Sales Exec,5000000,True,2019-01-28,Active
+EMP028,Bayu Santoso,Operations,Ops Staff,9000000,True,2021-11-16,Active
+EMP029,Cahya Permana,HR,HR Mgr,8000000,True,2023-10-16,Active
+EMP030,Dian Wibowo,Finance,Accountant,7000000,True,2019-02-22,Resign
+EMP031,Elsa Darmawan,Finance,Finance Analyst,5000000,True,2022-12-02,Resign
+EMP032,Faisal Prasetyo,Sales,Account Mgr,5000000,True,2024-06-26,Active
+EMP033,Galih Hidayat,HR,HR Admin,8000000,True,2020-09-15,Active
+EMP034,Hani Iskandar,HR,Recruitment Spec,5000000,True,2022-04-28,Resign
+EMP035,Ira Firmansyah,Finance,CFO,5000000,True,2019-01-21,Active
+EMP036,Jihan Ramadhan,Sales,Sales Exec,6000000,True,2020-07-16,Resign
+EMP037,Kevin Purnama,Finance,Accountant,7000000,True,2020-07-01,Resign
+EMP038,Lina Anggraeni,Finance,Finance Analyst,9000000,True,2022-12-24,Active
+EMP039,Mulia Wijaya,Finance,Accountant,9000000,True,2020-05-07,Active
+EMP040,Nanda Wijaya,Operations,Ops Staff,9000000,True,2024-06-02,Active
+EMP041,Okta Utomo,Finance,CFO,5000000,True,2023-03-02,Active
+EMP042,Pramudya Prasetyo,HR,HR Admin,6000000,True,2023-02-22,Active
+EMP043,Ratna Kurniawan,Finance,Accountant,5000000,True,2023-04-19,Active
+EMP044,Surya Handayani,Operations,Ops Staff,9000000,True,2022-11-19,Active
+EMP045,Tari Rahayu,Tech,Frontend Dev,6000000,True,2020-11-23,Active
+EMP046,Utami Setiawan,Tech,Tech Lead,13000000,True,2020-11-21,Active
+EMP047,Vani Handayani,Tech,Data Analyst,5000000,True,2019-08-20,Active
+EMP048,Wulan Hidayat,Sales,VP Sales,7000000,True,2020-09-09,Active
+EMP049,Yudha Suryadi,Sales,Sales Exec,9000000,True,2021-05-06,Active
+EMP050,Zaki Iskandar,Tech,Data Analyst,5000000,True,2024-09-10,Active

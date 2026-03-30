@@ -8,13 +8,17 @@
 // ==========================================
 // CONFIGURATION
 // ==========================================
+// Konfigurasi dinamis akan menimpa parameter default jika sheet 'config_params' tersedia.
 const CONFIG = {
-  TARGET_EMAIL: "hr.manager@example.com", // Hardcoded email untuk testing
-  LATE_THRESHOLD: 3,                      // Batas maksimal telat per minggu
-  STAGNANT_DAYS_THRESHOLD: 5,             // Batas maksimal hari tersendat
+  TARGET_EMAIL: "hr.manager@example.com", // Default Email
   SHEET_ATTENDANCE: "processed_attendance",
   SHEET_RECRUITMENT: "recruitment_pipeline",
-  SHEET_ALERTS: "alerts_log"
+  SHEET_ALERTS: "alerts_log",
+  SHEET_CONFIG: "config_params",
+  
+  // Default Threshold Parameters
+  LATE_THRESHOLD: 3,                      // Batas maksimal telat per minggu
+  STAGNANT_DAYS_THRESHOLD: 5              // Batas maksimal hari tersendat
 };
 
 // ==========================================
@@ -26,6 +30,9 @@ const CONFIG = {
 function runHRISAutomation() {
   Logger.log(" Memulai HRIS Automation Pipeline...");
   try {
+    // 0. Ingesti Parameter Konfigurasi Dinamis dari HR
+    loadSystemConfig();
+    
     // 1. Eksekusi Pengecekan Keterlambatan
     checkLateEmployees();
     
@@ -40,8 +47,36 @@ function runHRISAutomation() {
 }
 
 // ==========================================
-// 2. BUSINESS LOGIC FUNCTIONS
+// 2. BUSINESS LOGIC & CONFIG FUNCTIONS
 // ==========================================
+
+/**
+ * Memuat parameter dinamis dari sheet konfigurasi agar HR bisa menyesuaikan limit tanpa coding.
+ * Format Sheet 'config_params': Kolom A (Key), Kolom B (Value)
+ */
+function loadSystemConfig() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(CONFIG.SHEET_CONFIG);
+  if (!sheet) {
+    Logger.log("⚠️ Peringatan: Sheet config_params tidak ditemukan. Menggunakan Hardcoded Defaults.");
+    return;
+  }
+  
+  const data = sheet.getDataRange().getValues();
+  data.forEach(row => {
+    let key = row[0];
+    let value = row[1];
+    
+    if (key === "LATE_THRESHOLD" && !isNaN(value)) {
+      CONFIG.LATE_THRESHOLD = parseInt(value);
+    } else if (key === "STAGNANT_DAYS_THRESHOLD" && !isNaN(value)) {
+      CONFIG.STAGNANT_DAYS_THRESHOLD = parseInt(value);
+    } else if (key === "TARGET_EMAIL" && String(value).includes("@")) {
+      CONFIG.TARGET_EMAIL = value;
+    }
+  });
+  
+  Logger.log(`⚙️ Dynamic Config Terpasang: LATE = ${CONFIG.LATE_THRESHOLD}, STAGNANT = ${CONFIG.STAGNANT_DAYS_THRESHOLD}`);
+}
 
 /**
  * Memeriksa karyawan yang terlambat > 3 kali dalam seminggu
@@ -81,8 +116,8 @@ function checkLateEmployees() {
   for (let key in lateCounter) {
     let record = lateCounter[key];
     
-    if (record.count > CONFIG.LATE_THRESHOLD) {
-      let message = `Employee ${record.empId} has been late more than ${CONFIG.LATE_THRESHOLD} times this week (${record.week}). Total Lates: ${record.count}`;
+    if (record.count >= CONFIG.LATE_THRESHOLD) {
+      let message = `Employee ${record.empId} has been late ${record.count} times this week (${record.week}), exceeding the maximum threshold of ${CONFIG.LATE_THRESHOLD}.`;
       
       // Kirim Email
       sendEmailAlert(`🚨 Indiscipline Alert: ${record.empId}`, message);
@@ -108,7 +143,8 @@ function checkStagnantCandidates() {
   
   data.forEach(row => {
     // Hanya periksa kandidat yang masih berstatus 'Active' dan belum di stages akhir
-    let validToTrack = (row['status'] === 'Active' || row['status'] === 'Passed') && 
+    // Note: 'Passed' tidak diperiksa karena artinya kandidat sudah bergerak ke stage berikutnya
+    let validToTrack = (row['status'] === 'Active') && 
                        (row['stage'] !== 'Hired' && row['stage'] !== 'Rejected');
                        
     if (validToTrack) {
@@ -189,7 +225,7 @@ function logAlert(type, referenceId, message) {
  */
 function sendEmailAlert(subject, body) {
   try {
-    GmailApp.sendEmail({
+    MailApp.sendEmail({
       to: CONFIG.TARGET_EMAIL,
       subject: subject,
       body: body,

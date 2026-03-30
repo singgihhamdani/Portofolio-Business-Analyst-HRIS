@@ -13,6 +13,24 @@ job_titles = {
     'Operations': ['Ops Staff', 'Logistic Coord', 'Ops Manager']
 }
 
+# Daftar nama Indonesia realistis
+first_names = [
+    'Andi', 'Budi', 'Citra', 'Dewi', 'Eko', 'Fajar', 'Gita', 'Hendra',
+    'Indah', 'Joko', 'Kartika', 'Lukman', 'Maya', 'Nadia', 'Oscar',
+    'Putri', 'Qori', 'Reza', 'Sari', 'Taufik', 'Umar', 'Vina',
+    'Wahyu', 'Xena', 'Yoga', 'Zahra', 'Arief', 'Bayu', 'Cahya', 'Dian',
+    'Elsa', 'Faisal', 'Galih', 'Hani', 'Ira', 'Jihan', 'Kevin',
+    'Lina', 'Mulia', 'Nanda', 'Okta', 'Pramudya', 'Ratna', 'Surya',
+    'Tari', 'Utami', 'Vani', 'Wulan', 'Yudha', 'Zaki'
+]
+last_names = [
+    'Pratama', 'Wijaya', 'Kusuma', 'Saputra', 'Hidayat', 'Nugraha',
+    'Santoso', 'Permana', 'Hartono', 'Setiawan', 'Rahayu', 'Lestari',
+    'Purnama', 'Wibowo', 'Suryadi', 'Ramadhan', 'Utomo', 'Firmansyah',
+    'Handayani', 'Kurniawan', 'Maharani', 'Darmawan', 'Safitri', 'Gunawan',
+    'Hakim', 'Anggraeni', 'Susanto', 'Prasetyo', 'Cahyani', 'Iskandar'
+]
+
 # 1. EMPLOYEE MASTER
 employees = []
 # 42 active, 8 resign = 50 employees
@@ -23,25 +41,41 @@ for i in range(1, 51):
     emp_id = f"EMP{i:03d}"
     dept = random.choice(departments)
     title = random.choice(job_titles[dept])
-    join_year = random.randint(2019, 2025)
+    join_year = random.randint(2019, 2024)
     join_month = random.randint(1, 12)
     join_day = random.randint(1, 28)
     join_date = f"{join_year}-{join_month:02d}-{join_day:02d}"
     status = statuses[i-1]
-    name_suffix = chr(65 + (i % 26))
-    name = f"{title.split()[0]} {name_suffix}."
     
+    # Generate nama realistis unik
+    fname = first_names[i - 1]
+    lname = random.choice(last_names)
+    name = f"{fname} {lname}"
+    
+    # Generate Base Salary (Financials) and OT Eligibility
+    if 'Manager' in title or 'Director' in title:
+        base_salary = random.randint(15, 25) * 1000000
+        ot_eligible = False # Reguler C-Level tak dapat lembur
+    elif 'Senior' in title or 'Lead' in title:
+        base_salary = random.randint(10, 15) * 1000000
+        ot_eligible = True
+    else:
+        base_salary = random.randint(5, 9) * 1000000
+        ot_eligible = True
+        
     employees.append({
         'employee_id': emp_id,
-        'name': f"Pegawai {dept} {i}",
+        'name': name,
         'department': dept,
         'job_title': title,
+        'base_salary': base_salary,
+        'overtime_eligible': ot_eligible,
         'join_date': join_date,
         'status': status
     })
 
-with open('employee_master.csv', 'w', newline='') as f:
-    writer = csv.DictWriter(f, fieldnames=['employee_id', 'name', 'department', 'job_title', 'join_date', 'status'])
+with open('../data/employee_master.csv', 'w', newline='') as f:
+    writer = csv.DictWriter(f, fieldnames=['employee_id', 'name', 'department', 'job_title', 'base_salary', 'overtime_eligible', 'join_date', 'status'])
     writer.writeheader()
     writer.writerows(employees)
 
@@ -91,9 +125,20 @@ while current_date <= end_date:
             overtime = 0
             # Tech Dept has high overtime trend
             if emp['department'] == 'Tech' and random.random() < 0.4:
-                overtime = random.randint(60, 240) # 1 to 4 hours
+                minutes_out = random.randint(60, 240) # 1 - 4 hours lembur
+                # Jika tidak eligible lembur (Manager), lembur = 0 walau pulang malam
+                emp_master = next((e for e in employees if e['employee_id'] == emp['employee_id']), None)
+                if emp_master and not emp_master['overtime_eligible']:
+                    overtime = 0
+                else:
+                    overtime = minutes_out
             elif random.random() < 0.1:
-                overtime = random.randint(30, 120)
+                minutes_out = random.randint(30, 120)
+                emp_master = next((e for e in employees if e['employee_id'] == emp['employee_id']), None)
+                if emp_master and not emp_master['overtime_eligible']:
+                    overtime = 0
+                else:
+                    overtime = minutes_out
                 
             out_offset = overtime + random.randint(0, 10)
             actual_out = base_out + timedelta(minutes=out_offset)
@@ -122,7 +167,7 @@ while current_date <= end_date:
 
     current_date += timedelta(days=1)
 
-with open('attendance_log.csv', 'w', newline='') as f:
+with open('../data/attendance_log.csv', 'w', newline='') as f:
     writer = csv.DictWriter(f, fieldnames=['employee_id', 'date', 'check_in', 'check_out', 'status', 'overtime_minutes'])
     writer.writeheader()
     writer.writerows(attendance_data)
@@ -178,7 +223,12 @@ for i in range(1, 181): # 180 candidates
         # Increment days for next stage
         base_date += timedelta(days=random.randint(1, 4))
         
-with open('recruitment_pipeline.csv', 'w', newline='') as f:
+with open('../data/recruitment_pipeline.csv', 'w', newline='') as f:
     writer = csv.DictWriter(f, fieldnames=['candidate_id', 'position', 'department', 'stage', 'stage_timestamp', 'status'])
     writer.writeheader()
     writer.writerows(recruitment_data)
+
+print(f"✅ Data generation selesai:")
+print(f"   - employee_master.csv: {len(employees)} karyawan")
+print(f"   - attendance_log.csv: {len(attendance_data)} records")
+print(f"   - recruitment_pipeline.csv: {len(recruitment_data)} records")

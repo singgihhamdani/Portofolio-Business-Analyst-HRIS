@@ -1,0 +1,14 @@
+# Build scripts (internal tooling, not part of portfolio deliverable)
+# tools/ (Dihapus dari ignore karena sekarang berisi script penting Dashboard HTML)
+
+# Log files
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

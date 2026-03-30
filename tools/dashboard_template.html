@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Executive Dashboard</title>
+    <!-- Modern Corporate Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #2b3452;
+            --text-muted: #6c757d;
+            --primary: #0d6efd;
+            --danger: #dc3545;
+            --success: #198754;
+            --info: #0dcaf0;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            height: 100vh;
+            position: fixed;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+            padding-top: 20px;
+        }
+        .brand {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        .nav-item {
+            padding: 15px 25px;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+        }
+        .nav-item:hover, .nav-item.active {
+            background-color: #e9f2ff;
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+        }
+        
+        /* C-Level Restriction Badge */
+        .rbac-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #495057;
+            text-align: center;
+            border: 1px dashed #adb5bd;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 30px;
+        }
+        .header-title {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .header-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* KPI Scorecards */
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .kpi-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            border: 1px solid #eef0f2;
+        }
+        .kpi-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .kpi-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 10px 0 5px 0;
+        }
+        .v-primary { color: var(--primary); }
+        .v-danger { color: var(--danger); }
+        .v-success { color: var(--success); }
+        .v-info { color: var(--info); }
+        
+        .kpi-desc { font-size: 12px; }
+
+        /* Charts Layout */
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .chart-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            border: 1px solid #eef0f2;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+
+        /* Tab Logic */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="brand">HR ANALYTICS</div>
+        <a href="#" class="nav-item active" onclick="showTab('tab-overview', this)">Executive Overview</a>
+        <a href="#" class="nav-item" onclick="showTab('tab-recruitment', this)">Recruitment Hub</a>
+        <a href="#" class="nav-item" onclick="showTab('tab-cost', this)">Operational Cost</a>
+        
+        <div class="rbac-badge">
+            <b>🔒 Access Level: EXEC</b><br>
+            Read-Only. File generated by Python ETL.
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="header-title">Executive Dashboard</h1>
+        <div class="header-subtitle">Performance Evaluation & Cost Tracker • Generated on {date_generated}</div>
+
+        <div class="kpi-container">
+            <div class="kpi-card">
+                <div class="kpi-title">Attendance Rate</div>
+                <div class="kpi-value v-primary">{attendance_rate:.1f}%</div>
+                <div class="kpi-desc" style="color:var(--success)">▲ Tracking Positively</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Turnover Rate</div>
+                <div class="kpi-value v-danger">{turnover_rate:.1f}%</div>
+                <div class="kpi-desc" style="color:var(--danger)">⚠️ Action Required</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Avg Time-to-Hire</div>
+                <div class="kpi-value v-info">{avg_tth:.0f} Days</div>
+                <div class="kpi-desc" style="color:var(--text-muted)">Recruitment Agility</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Overtime Load</div>
+                <div class="kpi-value v-warning">{overtime_rate:.2f}%</div>
+                <div class="kpi-desc" style="color:var(--text-muted)">OpEx Indicator</div>
+            </div>
+        </div>
+
+        <!-- TAB OVERVIEW -->
+        <div id="tab-overview" class="tab-content active">
+            <!-- Charts Row 1 -->
+            <div class="chart-grid">
+                <div class="chart-card">
+                    {div_fig1}
+                </div>
+                <div class="chart-card">
+                    {div_fig0}
+                </div>
+            </div>
+
+            <!-- Charts Row 2 -->
+            <div class="chart-grid">
+                <div class="chart-card full-width">
+                    {div_fig4}
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB RECRUITMENT -->
+        <div id="tab-recruitment" class="tab-content">
+            <div class="chart-grid">
+                <div class="chart-card full-width">
+                    {div_fig3}
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB COST -->
+        <div id="tab-cost" class="tab-content">
+            <div class="chart-grid">
+                <div class="chart-card">
+                    {div_fig5}
+                </div>
+                <div class="chart-card">
+                    {div_fig2}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showTab(tabId, element) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Remove active class from all links
+            const navLinks = document.querySelectorAll('.nav-item');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Show requested tab & highlight link
+            document.getElementById(tabId).classList.add('active');
+            element.classList.add('active');
+            
+            // Trigger Plotly resize nicely so charts fit the newly displayed block
+            window.dispatchEvent(new Event('resize'));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+employee_id,name,department,job_title,base_salary,total_days_present,total_days_absent,total_late_count,total_overtime_minutes,overtime_hours,estimated_ot_cost
+EMP001,Andi Setiawan,Operations,Ops Staff,9000000,42,0,0,540,9.0,468208
+EMP002,Budi Darmawan,Tech,Backend Dev,6000000,39,3,0,2497,41.62,1443468
+EMP003,Citra Hartono,Tech,Data Analyst,8000000,41,1,0,2914,48.57,2246011
+EMP004,Dewi Darmawan,Tech,Backend Dev,7000000,40,2,0,2943,49.05,1984682
+EMP005,Eko Gunawan,Sales,VP Sales,6000000,40,2,16,132,2.2,76300
+EMP006,Fajar Safitri,HR,Recruitment Spec,9000000,21,1,0,112,1.87,97283
+EMP007,Gita Susanto,HR,HR Mgr,5000000,40,2,0,253,4.22,121965
+EMP008,Hendra Iskandar,Tech,Tech Lead,14000000,37,5,0,1918,31.97,2587167
+EMP009,Indah Cahyani,Tech,Backend Dev,8000000,41,1,0,2617,43.62,2017109
+EMP010,Joko Firmansyah,HR,Recruitment Spec,9000000,41,1,0,144,2.4,124855
+EMP011,Kartika Permana,Tech,Tech Lead,11000000,42,0,0,2060,34.33,2182832
+EMP012,Lukman Saputra,Operations,Logistic Coord,6000000,39,3,30,501,8.35,289595
+EMP013,Maya Purnama,HR,HR Mgr,8000000,41,1,0,223,3.72,172023
+EMP014,Nadia Prasetyo,Operations,Logistic Coord,5000000,40,2,0,386,6.43,185838
+EMP015,Oscar Maharani,Sales,VP Sales,7000000,41,1,13,241,4.02,162658
+EMP016,Putri Pratama,Sales,Account Mgr,7000000,41,1,15,256,4.27,172774
+EMP017,Qori Maharani,Operations,Ops Staff,7000000,42,0,0,0,0.0,0
+EMP018,Reza Hakim,Operations,Ops Manager,17000000,40,2,0,0,0.0,0
+EMP019,Sari Ramadhan,Operations,Ops Manager,15000000,39,3,0,0,0.0,0
+EMP020,Taufik Permana,Sales,Account Mgr,9000000,42,0,15,495,8.25,429190
+EMP021,Umar Kusuma,Sales,Sales Exec,9000000,22,0,10,81,1.35,70231
+EMP022,Vina Nugraha,HR,HR Admin,7000000,41,1,0,248,4.13,167109
+EMP023,Wahyu Hakim,Operations,Ops Manager,18000000,40,2,0,0,0.0,0
+EMP024,Xena Suryadi,Tech,Tech Lead,14000000,22,0,0,1756,29.27,2368670
+EMP025,Yoga Rahayu,Finance,Accountant,5000000,41,1,0,276,4.6,132947
+EMP026,Zahra Pratama,Operations,Ops Manager,16000000,39,3,0,0,0.0,0
+EMP027,Arief Rahayu,Sales,Sales Exec,5000000,38,4,15,205,3.42,98843
+EMP028,Bayu Santoso,Operations,Ops Staff,9000000,42,0,0,213,3.55,184682
+EMP029,Cahya Permana,HR,HR Mgr,8000000,40,2,0,363,6.05,279768
+EMP030,Dian Wibowo,Finance,Accountant,7000000,22,0,0,294,4.9,198265
+EMP031,Elsa Darmawan,Finance,Finance Analyst,5000000,22,0,0,32,0.53,15317
+EMP032,Faisal Prasetyo,Sales,Account Mgr,5000000,41,1,12,139,2.32,67052
+EMP033,Galih Hidayat,HR,HR Admin,8000000,42,0,0,501,8.35,386127
+EMP034,Hani Iskandar,HR,Recruitment Spec,5000000,21,1,0,77,1.28,36994
+EMP035,Ira Firmansyah,Finance,CFO,5000000,40,2,0,97,1.62,46820
+EMP036,Jihan Ramadhan,Sales,Sales Exec,6000000,21,1,8,339,5.65,195953
+EMP037,Kevin Purnama,Finance,Accountant,7000000,20,2,0,0,0.0,0
+EMP038,Lina Anggraeni,Finance,Finance Analyst,9000000,42,0,0,503,8.38,435953
+EMP039,Mulia Wijaya,Finance,Accountant,9000000,42,0,0,262,4.37,227341
+EMP040,Nanda Wijaya,Operations,Ops Staff,9000000,42,0,0,380,6.33,329306
+EMP041,Okta Utomo,Finance,CFO,5000000,41,1,0,407,6.78,195953
+EMP042,Pramudya Prasetyo,HR,HR Admin,6000000,41,1,0,336,5.6,194219
+EMP043,Ratna Kurniawan,Finance,Accountant,5000000,42,0,0,168,2.8,80924
+EMP044,Surya Handayani,Operations,Ops Staff,9000000,42,0,0,238,3.97,206531
+EMP045,Tari Rahayu,Tech,Frontend Dev,6000000,40,2,0,1900,31.67,1098381
+EMP046,Utami Setiawan,Tech,Tech Lead,13000000,39,3,0,2696,44.93,3376242
+EMP047,Vani Handayani,Tech,Data Analyst,5000000,40,2,0,2931,48.85,1411849
+EMP048,Wulan Hidayat,Sales,VP Sales,7000000,40,2,15,296,4.93,199479
+EMP049,Yudha Suryadi,Sales,Sales Exec,9000000,40,2,16,322,5.37,279364
+EMP050,Zaki Iskandar,Tech,Data Analyst,5000000,42,0,0,2694,44.9,1297687

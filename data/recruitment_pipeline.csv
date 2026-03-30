@@ -1,0 +1,452 @@
+candidate_id,position,department,stage,stage_timestamp,status
+CAN001,Account Mgr,Sales,Applied,2026-01-14,Passed
+CAN001,Account Mgr,Sales,Screening,2026-02-17,Active
+CAN002,Ops Manager,Operations,Applied,2025-12-30,Rejected
+CAN003,HR Admin,HR,Applied,2026-02-19,Active
+CAN004,VP Sales,Sales,Applied,2026-02-19,Active
+CAN005,Backend Dev,Tech,Applied,2025-12-29,Passed
+CAN005,Backend Dev,Tech,Screening,2026-01-01,Passed
+CAN005,Backend Dev,Tech,Interview,2026-01-05,Rejected
+CAN006,Tech Lead,Tech,Applied,2026-01-21,Passed
+CAN006,Tech Lead,Tech,Screening,2026-01-22,Passed
+CAN006,Tech Lead,Tech,Interview,2026-02-19,Active
+CAN007,Sales Exec,Sales,Applied,2026-02-20,Active
+CAN008,Data Analyst,Tech,Applied,2026-01-08,Passed
+CAN008,Data Analyst,Tech,Screening,2026-02-16,Active
+CAN009,Recruitment Spec,HR,Applied,2026-01-05,Rejected
+CAN010,Frontend Dev,Tech,Applied,2026-01-23,Passed
+CAN010,Frontend Dev,Tech,Screening,2026-01-25,Passed
+CAN010,Frontend Dev,Tech,Interview,2026-01-28,Passed
+CAN010,Frontend Dev,Tech,Offering,2026-01-31,Passed
+CAN010,Frontend Dev,Tech,Hired,2026-02-04,Hired
+CAN011,VP Sales,Sales,Applied,2025-12-21,Rejected
+CAN012,Tech Lead,Tech,Applied,2026-02-21,Active
+CAN013,Accountant,Finance,Applied,2026-02-06,Passed
+CAN013,Accountant,Finance,Screening,2026-02-17,Active
+CAN014,Finance Analyst,Finance,Applied,2026-01-09,Passed
+CAN014,Finance Analyst,Finance,Screening,2026-01-10,Passed
+CAN014,Finance Analyst,Finance,Interview,2026-01-12,Passed
+CAN014,Finance Analyst,Finance,Offering,2026-01-16,Passed
+CAN014,Finance Analyst,Finance,Hired,2026-01-18,Hired
+CAN015,HR Admin,HR,Applied,2026-02-01,Passed
+CAN015,HR Admin,HR,Screening,2026-02-04,Passed
+CAN015,HR Admin,HR,Interview,2026-02-14,Active
+CAN016,Ops Staff,Operations,Applied,2025-12-31,Passed
+CAN016,Ops Staff,Operations,Screening,2026-01-02,Passed
+CAN016,Ops Staff,Operations,Interview,2026-01-05,Passed
+CAN016,Ops Staff,Operations,Offering,2026-01-07,Passed
+CAN016,Ops Staff,Operations,Hired,2026-01-08,Hired
+CAN017,Ops Staff,Operations,Applied,2025-12-22,Passed
+CAN017,Ops Staff,Operations,Screening,2025-12-24,Passed
+CAN017,Ops Staff,Operations,Interview,2025-12-28,Passed
+CAN017,Ops Staff,Operations,Offering,2025-12-30,Passed
+CAN017,Ops Staff,Operations,Hired,2026-01-02,Hired
+CAN018,Finance Analyst,Finance,Applied,2026-01-20,Passed
+CAN018,Finance Analyst,Finance,Screening,2026-01-24,Passed
+CAN018,Finance Analyst,Finance,Interview,2026-01-28,Passed
+CAN018,Finance Analyst,Finance,Offering,2026-02-01,Passed
+CAN018,Finance Analyst,Finance,Hired,2026-02-04,Hired
+CAN019,Data Analyst,Tech,Applied,2026-02-09,Rejected
+CAN020,Ops Manager,Operations,Applied,2026-02-09,Rejected
+CAN021,Recruitment Spec,HR,Applied,2026-02-16,Active
+CAN022,Finance Analyst,Finance,Applied,2026-01-07,Rejected
+CAN023,Recruitment Spec,HR,Applied,2026-02-05,Passed
+CAN023,Recruitment Spec,HR,Screening,2026-02-06,Passed
+CAN023,Recruitment Spec,HR,Interview,2026-02-08,Passed
+CAN023,Recruitment Spec,HR,Offering,2026-02-10,Passed
+CAN023,Recruitment Spec,HR,Hired,2026-02-14,Hired
+CAN024,Frontend Dev,Tech,Applied,2026-02-13,Passed
+CAN024,Frontend Dev,Tech,Screening,2026-02-16,Passed
+CAN024,Frontend Dev,Tech,Interview,2026-02-17,Rejected
+CAN025,Finance Analyst,Finance,Applied,2025-12-23,Rejected
+CAN026,VP Sales,Sales,Applied,2026-01-23,Passed
+CAN026,VP Sales,Sales,Screening,2026-01-24,Passed
+CAN026,VP Sales,Sales,Interview,2026-01-28,Passed
+CAN026,VP Sales,Sales,Offering,2026-01-31,Passed
+CAN026,VP Sales,Sales,Hired,2026-02-01,Hired
+CAN027,CFO,Finance,Applied,2026-02-03,Passed
+CAN027,CFO,Finance,Screening,2026-02-07,Passed
+CAN027,CFO,Finance,Interview,2026-02-10,Passed
+CAN027,CFO,Finance,Offering,2026-02-12,Passed
+CAN027,CFO,Finance,Hired,2026-02-13,Hired
+CAN028,Ops Manager,Operations,Applied,2025-12-20,Rejected
+CAN029,Accountant,Finance,Applied,2026-01-04,Rejected
+CAN030,Frontend Dev,Tech,Applied,2026-01-18,Passed
+CAN030,Frontend Dev,Tech,Screening,2026-01-21,Passed
+CAN030,Frontend Dev,Tech,Interview,2026-02-22,Active
+CAN031,Accountant,Finance,Applied,2026-01-07,Passed
+CAN031,Accountant,Finance,Screening,2026-01-11,Rejected
+CAN032,CFO,Finance,Applied,2026-01-06,Passed
+CAN032,CFO,Finance,Screening,2026-01-10,Passed
+CAN032,CFO,Finance,Interview,2026-01-14,Passed
+CAN032,CFO,Finance,Offering,2026-02-21,Active
+CAN033,Sales Exec,Sales,Applied,2026-01-21,Passed
+CAN033,Sales Exec,Sales,Screening,2026-01-25,Rejected
+CAN034,Tech Lead,Tech,Applied,2025-12-21,Passed
+CAN034,Tech Lead,Tech,Screening,2025-12-22,Rejected
+CAN035,Sales Exec,Sales,Applied,2026-01-08,Rejected
+CAN036,Tech Lead,Tech,Applied,2025-12-24,Rejected
+CAN037,Frontend Dev,Tech,Applied,2026-01-22,Passed
+CAN037,Frontend Dev,Tech,Screening,2026-01-24,Passed
+CAN037,Frontend Dev,Tech,Interview,2026-01-27,Passed
+CAN037,Frontend Dev,Tech,Offering,2026-01-31,Passed
+CAN037,Frontend Dev,Tech,Hired,2026-02-01,Hired
+CAN038,CFO,Finance,Applied,2026-02-19,Active
+CAN039,Finance Analyst,Finance,Applied,2025-12-26,Passed
+CAN039,Finance Analyst,Finance,Screening,2025-12-30,Passed
+CAN039,Finance Analyst,Finance,Interview,2025-12-31,Passed
+CAN039,Finance Analyst,Finance,Offering,2026-01-03,Rejected
+CAN040,Frontend Dev,Tech,Applied,2026-02-07,Passed
+CAN040,Frontend Dev,Tech,Screening,2026-02-08,Passed
+CAN040,Frontend Dev,Tech,Interview,2026-02-12,Passed
+CAN040,Frontend Dev,Tech,Offering,2026-02-15,Passed
+CAN040,Frontend Dev,Tech,Hired,2026-02-19,Hired
+CAN041,Accountant,Finance,Applied,2026-01-28,Passed
+CAN041,Accountant,Finance,Screening,2026-02-01,Passed
+CAN041,Accountant,Finance,Interview,2026-02-04,Passed
+CAN041,Accountant,Finance,Offering,2026-02-07,Passed
+CAN041,Accountant,Finance,Hired,2026-02-11,Hired
+CAN042,HR Admin,HR,Applied,2026-02-18,Active
+CAN043,Ops Manager,Operations,Applied,2026-02-19,Active
+CAN044,VP Sales,Sales,Applied,2026-01-06,Passed
+CAN044,VP Sales,Sales,Screening,2026-01-10,Passed
+CAN044,VP Sales,Sales,Interview,2026-01-13,Passed
+CAN044,VP Sales,Sales,Offering,2026-01-15,Passed
+CAN044,VP Sales,Sales,Hired,2026-01-18,Hired
+CAN045,Accountant,Finance,Applied,2025-12-17,Rejected
+CAN046,Backend Dev,Tech,Applied,2026-01-16,Passed
+CAN046,Backend Dev,Tech,Screening,2026-01-18,Passed
+CAN046,Backend Dev,Tech,Interview,2026-01-20,Passed
+CAN046,Backend Dev,Tech,Offering,2026-02-15,Active
+CAN047,HR Admin,HR,Applied,2026-02-20,Active
+CAN048,Backend Dev,Tech,Applied,2026-02-12,Passed
+CAN048,Backend Dev,Tech,Screening,2026-02-16,Passed
+CAN048,Backend Dev,Tech,Interview,2026-02-20,Passed
+CAN048,Backend Dev,Tech,Offering,2026-02-24,Passed
+CAN048,Backend Dev,Tech,Hired,2026-02-26,Hired
+CAN049,HR Mgr,HR,Applied,2026-01-07,Rejected
+CAN050,Frontend Dev,Tech,Applied,2026-02-17,Active
+CAN051,VP Sales,Sales,Applied,2026-02-14,Active
+CAN052,VP Sales,Sales,Applied,2025-12-30,Passed
+CAN052,VP Sales,Sales,Screening,2026-02-19,Active
+CAN053,Ops Staff,Operations,Applied,2026-02-15,Active
+CAN054,CFO,Finance,Applied,2026-02-22,Active
+CAN055,Ops Manager,Operations,Applied,2026-02-10,Passed
+CAN055,Ops Manager,Operations,Screening,2026-02-14,Passed
+CAN055,Ops Manager,Operations,Interview,2026-02-16,Passed
+CAN055,Ops Manager,Operations,Offering,2026-02-17,Passed
+CAN055,Ops Manager,Operations,Hired,2026-02-20,Hired
+CAN056,Frontend Dev,Tech,Applied,2025-12-15,Passed
+CAN056,Frontend Dev,Tech,Screening,2025-12-16,Passed
+CAN056,Frontend Dev,Tech,Interview,2025-12-20,Passed
+CAN056,Frontend Dev,Tech,Offering,2025-12-24,Passed
+CAN056,Frontend Dev,Tech,Hired,2025-12-26,Hired
+CAN057,HR Mgr,HR,Applied,2026-01-16,Rejected
+CAN058,HR Mgr,HR,Applied,2025-12-24,Passed
+CAN058,HR Mgr,HR,Screening,2025-12-28,Passed
+CAN058,HR Mgr,HR,Interview,2025-12-30,Passed
+CAN058,HR Mgr,HR,Offering,2026-01-02,Passed
+CAN058,HR Mgr,HR,Hired,2026-01-03,Hired
+CAN059,Data Analyst,Tech,Applied,2025-12-26,Passed
+CAN059,Data Analyst,Tech,Screening,2025-12-27,Passed
+CAN059,Data Analyst,Tech,Interview,2025-12-31,Passed
+CAN059,Data Analyst,Tech,Offering,2026-01-02,Passed
+CAN059,Data Analyst,Tech,Hired,2026-01-04,Hired
+CAN060,Ops Staff,Operations,Applied,2025-12-22,Rejected
+CAN061,Data Analyst,Tech,Applied,2026-02-07,Passed
+CAN061,Data Analyst,Tech,Screening,2026-02-11,Passed
+CAN061,Data Analyst,Tech,Interview,2026-02-15,Passed
+CAN061,Data Analyst,Tech,Offering,2026-02-19,Passed
+CAN061,Data Analyst,Tech,Hired,2026-02-23,Hired
+CAN062,Backend Dev,Tech,Applied,2026-02-16,Active
+CAN063,Accountant,Finance,Applied,2026-02-19,Active
+CAN064,Account Mgr,Sales,Applied,2026-01-16,Passed
+CAN064,Account Mgr,Sales,Screening,2026-01-19,Passed
+CAN064,Account Mgr,Sales,Interview,2026-01-20,Passed
+CAN064,Account Mgr,Sales,Offering,2026-02-17,Active
+CAN065,HR Admin,HR,Applied,2026-01-11,Rejected
+CAN066,Data Analyst,Tech,Applied,2025-12-24,Passed
+CAN066,Data Analyst,Tech,Screening,2025-12-27,Passed
+CAN066,Data Analyst,Tech,Interview,2025-12-28,Passed
+CAN066,Data Analyst,Tech,Offering,2025-12-30,Passed
+CAN066,Data Analyst,Tech,Hired,2026-01-01,Hired
+CAN067,HR Mgr,HR,Applied,2026-01-31,Passed
+CAN067,HR Mgr,HR,Screening,2026-02-01,Passed
+CAN067,HR Mgr,HR,Interview,2026-02-03,Passed
+CAN067,HR Mgr,HR,Offering,2026-02-06,Passed
+CAN067,HR Mgr,HR,Hired,2026-02-08,Hired
+CAN068,HR Mgr,HR,Applied,2026-02-04,Passed
+CAN068,HR Mgr,HR,Screening,2026-02-08,Passed
+CAN068,HR Mgr,HR,Interview,2026-02-09,Passed
+CAN068,HR Mgr,HR,Offering,2026-02-18,Active
+CAN069,Account Mgr,Sales,Applied,2026-02-21,Active
+CAN070,HR Mgr,HR,Applied,2026-02-04,Passed
+CAN070,HR Mgr,HR,Screening,2026-02-07,Passed
+CAN070,HR Mgr,HR,Interview,2026-02-11,Passed
+CAN070,HR Mgr,HR,Offering,2026-02-15,Passed
+CAN070,HR Mgr,HR,Hired,2026-02-19,Hired
+CAN071,Ops Staff,Operations,Applied,2026-02-19,Active
+CAN072,Recruitment Spec,HR,Applied,2026-02-11,Rejected
+CAN073,Ops Staff,Operations,Applied,2026-01-02,Passed
+CAN073,Ops Staff,Operations,Screening,2026-01-06,Passed
+CAN073,Ops Staff,Operations,Interview,2026-01-08,Rejected
+CAN074,Recruitment Spec,HR,Applied,2025-12-27,Rejected
+CAN075,Finance Analyst,Finance,Applied,2026-02-08,Passed
+CAN075,Finance Analyst,Finance,Screening,2026-02-17,Active
+CAN076,Logistic Coord,Operations,Applied,2026-01-25,Passed
+CAN076,Logistic Coord,Operations,Screening,2026-02-14,Active
+CAN077,HR Admin,HR,Applied,2026-01-25,Passed
+CAN077,HR Admin,HR,Screening,2026-01-27,Passed
+CAN077,HR Admin,HR,Interview,2026-01-30,Passed
+CAN077,HR Admin,HR,Offering,2026-01-31,Passed
+CAN077,HR Admin,HR,Hired,2026-02-01,Hired
+CAN078,Tech Lead,Tech,Applied,2026-02-16,Active
+CAN079,Logistic Coord,Operations,Applied,2026-01-01,Passed
+CAN079,Logistic Coord,Operations,Screening,2026-01-03,Passed
+CAN079,Logistic Coord,Operations,Interview,2026-01-04,Rejected
+CAN080,HR Mgr,HR,Applied,2026-02-15,Active
+CAN081,Ops Manager,Operations,Applied,2026-01-05,Rejected
+CAN082,Account Mgr,Sales,Applied,2026-02-13,Passed
+CAN082,Account Mgr,Sales,Screening,2026-02-16,Passed
+CAN082,Account Mgr,Sales,Interview,2026-02-18,Passed
+CAN082,Account Mgr,Sales,Offering,2026-02-22,Passed
+CAN082,Account Mgr,Sales,Hired,2026-02-24,Hired
+CAN083,Accountant,Finance,Applied,2026-02-18,Active
+CAN084,Ops Manager,Operations,Applied,2025-12-20,Passed
+CAN084,Ops Manager,Operations,Screening,2025-12-23,Passed
+CAN084,Ops Manager,Operations,Interview,2025-12-25,Passed
+CAN084,Ops Manager,Operations,Offering,2025-12-28,Passed
+CAN084,Ops Manager,Operations,Hired,2026-01-01,Hired
+CAN085,Finance Analyst,Finance,Applied,2026-02-15,Active
+CAN086,Ops Staff,Operations,Applied,2026-01-04,Passed
+CAN086,Ops Staff,Operations,Screening,2026-01-05,Passed
+CAN086,Ops Staff,Operations,Interview,2026-02-19,Active
+CAN087,Sales Exec,Sales,Applied,2026-02-03,Passed
+CAN087,Sales Exec,Sales,Screening,2026-02-07,Passed
+CAN087,Sales Exec,Sales,Interview,2026-02-08,Passed
+CAN087,Sales Exec,Sales,Offering,2026-02-10,Passed
+CAN087,Sales Exec,Sales,Hired,2026-02-13,Hired
+CAN088,Tech Lead,Tech,Applied,2026-01-26,Passed
+CAN088,Tech Lead,Tech,Screening,2026-01-29,Rejected
+CAN089,Account Mgr,Sales,Applied,2025-12-23,Passed
+CAN089,Account Mgr,Sales,Screening,2025-12-25,Passed
+CAN089,Account Mgr,Sales,Interview,2025-12-26,Passed
+CAN089,Account Mgr,Sales,Offering,2025-12-30,Passed
+CAN089,Account Mgr,Sales,Hired,2026-01-01,Hired
+CAN090,Ops Staff,Operations,Applied,2026-01-14,Passed
+CAN090,Ops Staff,Operations,Screening,2026-02-22,Active
+CAN091,HR Admin,HR,Applied,2025-12-27,Passed
+CAN091,HR Admin,HR,Screening,2025-12-28,Passed
+CAN091,HR Admin,HR,Interview,2025-12-30,Rejected
+CAN092,CFO,Finance,Applied,2026-02-04,Passed
+CAN092,CFO,Finance,Screening,2026-02-19,Active
+CAN093,VP Sales,Sales,Applied,2026-02-13,Passed
+CAN093,VP Sales,Sales,Screening,2026-02-16,Passed
+CAN093,VP Sales,Sales,Interview,2026-02-19,Passed
+CAN093,VP Sales,Sales,Offering,2026-02-21,Passed
+CAN093,VP Sales,Sales,Hired,2026-02-24,Hired
+CAN094,HR Mgr,HR,Applied,2026-02-18,Active
+CAN095,HR Admin,HR,Applied,2026-01-04,Rejected
+CAN096,Accountant,Finance,Applied,2025-12-22,Rejected
+CAN097,HR Mgr,HR,Applied,2026-02-16,Active
+CAN098,Ops Manager,Operations,Applied,2026-02-03,Passed
+CAN098,Ops Manager,Operations,Screening,2026-02-06,Passed
+CAN098,Ops Manager,Operations,Interview,2026-02-20,Active
+CAN099,HR Admin,HR,Applied,2026-02-16,Active
+CAN100,HR Mgr,HR,Applied,2026-02-11,Passed
+CAN100,HR Mgr,HR,Screening,2026-02-15,Active
+CAN101,Tech Lead,Tech,Applied,2026-01-16,Passed
+CAN101,Tech Lead,Tech,Screening,2026-01-18,Passed
+CAN101,Tech Lead,Tech,Interview,2026-01-22,Passed
+CAN101,Tech Lead,Tech,Offering,2026-01-25,Passed
+CAN101,Tech Lead,Tech,Hired,2026-01-28,Hired
+CAN102,Accountant,Finance,Applied,2026-01-15,Passed
+CAN102,Accountant,Finance,Screening,2026-02-20,Active
+CAN103,Recruitment Spec,HR,Applied,2026-01-28,Passed
+CAN103,Recruitment Spec,HR,Screening,2026-01-31,Passed
+CAN103,Recruitment Spec,HR,Interview,2026-02-01,Passed
+CAN103,Recruitment Spec,HR,Offering,2026-02-05,Passed
+CAN103,Recruitment Spec,HR,Hired,2026-02-08,Hired
+CAN104,Account Mgr,Sales,Applied,2026-01-18,Passed
+CAN104,Account Mgr,Sales,Screening,2026-01-20,Passed
+CAN104,Account Mgr,Sales,Interview,2026-02-17,Active
+CAN105,Finance Analyst,Finance,Applied,2025-12-19,Passed
+CAN105,Finance Analyst,Finance,Screening,2025-12-23,Rejected
+CAN106,Finance Analyst,Finance,Applied,2026-01-23,Rejected
+CAN107,Ops Staff,Operations,Applied,2026-02-19,Active
+CAN108,CFO,Finance,Applied,2025-12-20,Passed
+CAN108,CFO,Finance,Screening,2025-12-24,Passed
+CAN108,CFO,Finance,Interview,2025-12-27,Passed
+CAN108,CFO,Finance,Offering,2026-02-16,Active
+CAN109,Accountant,Finance,Applied,2026-01-10,Passed
+CAN109,Accountant,Finance,Screening,2026-01-13,Passed
+CAN109,Accountant,Finance,Interview,2026-02-19,Active
+CAN110,Backend Dev,Tech,Applied,2026-01-02,Rejected
+CAN111,Accountant,Finance,Applied,2026-02-18,Active
+CAN112,CFO,Finance,Applied,2025-12-25,Passed
+CAN112,CFO,Finance,Screening,2025-12-27,Passed
+CAN112,CFO,Finance,Interview,2025-12-31,Passed
+CAN112,CFO,Finance,Offering,2026-01-03,Rejected
+CAN113,Recruitment Spec,HR,Applied,2026-01-24,Passed
+CAN113,Recruitment Spec,HR,Screening,2026-01-25,Passed
+CAN113,Recruitment Spec,HR,Interview,2026-02-21,Active
+CAN114,Sales Exec,Sales,Applied,2026-01-23,Passed
+CAN114,Sales Exec,Sales,Screening,2026-01-26,Passed
+CAN114,Sales Exec,Sales,Interview,2026-01-29,Passed
+CAN114,Sales Exec,Sales,Offering,2026-01-31,Passed
+CAN114,Sales Exec,Sales,Hired,2026-02-02,Hired
+CAN115,Data Analyst,Tech,Applied,2026-01-21,Passed
+CAN115,Data Analyst,Tech,Screening,2026-01-24,Passed
+CAN115,Data Analyst,Tech,Interview,2026-01-28,Rejected
+CAN116,Recruitment Spec,HR,Applied,2026-02-20,Active
+CAN117,Accountant,Finance,Applied,2026-01-10,Passed
+CAN117,Accountant,Finance,Screening,2026-01-14,Passed
+CAN117,Accountant,Finance,Interview,2026-01-16,Passed
+CAN117,Accountant,Finance,Offering,2026-01-20,Passed
+CAN117,Accountant,Finance,Hired,2026-01-23,Hired
+CAN118,VP Sales,Sales,Applied,2025-12-15,Rejected
+CAN119,Sales Exec,Sales,Applied,2025-12-19,Rejected
+CAN120,HR Admin,HR,Applied,2026-01-07,Passed
+CAN120,HR Admin,HR,Screening,2026-01-10,Passed
+CAN120,HR Admin,HR,Interview,2026-02-15,Active
+CAN121,CFO,Finance,Applied,2026-01-08,Rejected
+CAN122,Data Analyst,Tech,Applied,2026-02-02,Rejected
+CAN123,HR Admin,HR,Applied,2025-12-16,Passed
+CAN123,HR Admin,HR,Screening,2025-12-18,Passed
+CAN123,HR Admin,HR,Interview,2025-12-21,Passed
+CAN123,HR Admin,HR,Offering,2026-02-17,Active
+CAN124,VP Sales,Sales,Applied,2025-12-18,Passed
+CAN124,VP Sales,Sales,Screening,2025-12-20,Rejected
+CAN125,HR Mgr,HR,Applied,2026-01-27,Passed
+CAN125,HR Mgr,HR,Screening,2026-01-28,Passed
+CAN125,HR Mgr,HR,Interview,2026-02-01,Passed
+CAN125,HR Mgr,HR,Offering,2026-02-04,Passed
+CAN125,HR Mgr,HR,Hired,2026-02-06,Hired
+CAN126,HR Mgr,HR,Applied,2026-01-25,Rejected
+CAN127,Account Mgr,Sales,Applied,2025-12-28,Passed
+CAN127,Account Mgr,Sales,Screening,2026-01-01,Passed
+CAN127,Account Mgr,Sales,Interview,2026-01-02,Passed
+CAN127,Account Mgr,Sales,Offering,2026-01-05,Passed
+CAN127,Account Mgr,Sales,Hired,2026-01-06,Hired
+CAN128,Ops Staff,Operations,Applied,2025-12-28,Passed
+CAN128,Ops Staff,Operations,Screening,2025-12-31,Rejected
+CAN129,Finance Analyst,Finance,Applied,2026-01-20,Rejected
+CAN130,Frontend Dev,Tech,Applied,2025-12-24,Passed
+CAN130,Frontend Dev,Tech,Screening,2025-12-28,Rejected
+CAN131,Recruitment Spec,HR,Applied,2026-02-15,Active
+CAN132,Data Analyst,Tech,Applied,2025-12-17,Passed
+CAN132,Data Analyst,Tech,Screening,2025-12-18,Rejected
+CAN133,Sales Exec,Sales,Applied,2025-12-24,Passed
+CAN133,Sales Exec,Sales,Screening,2025-12-26,Passed
+CAN133,Sales Exec,Sales,Interview,2025-12-27,Passed
+CAN133,Sales Exec,Sales,Offering,2025-12-29,Rejected
+CAN134,HR Mgr,HR,Applied,2026-02-21,Active
+CAN135,VP Sales,Sales,Applied,2026-02-20,Active
+CAN136,Data Analyst,Tech,Applied,2026-02-19,Active
+CAN137,HR Admin,HR,Applied,2025-12-30,Passed
+CAN137,HR Admin,HR,Screening,2025-12-31,Passed
+CAN137,HR Admin,HR,Interview,2026-01-04,Passed
+CAN137,HR Admin,HR,Offering,2026-01-06,Passed
+CAN137,HR Admin,HR,Hired,2026-01-08,Hired
+CAN138,Account Mgr,Sales,Applied,2026-01-24,Passed
+CAN138,Account Mgr,Sales,Screening,2026-01-26,Passed
+CAN138,Account Mgr,Sales,Interview,2026-02-15,Active
+CAN139,Finance Analyst,Finance,Applied,2025-12-29,Passed
+CAN139,Finance Analyst,Finance,Screening,2025-12-30,Passed
+CAN139,Finance Analyst,Finance,Interview,2026-02-14,Active
+CAN140,Sales Exec,Sales,Applied,2026-02-21,Active
+CAN141,HR Admin,HR,Applied,2026-02-20,Active
+CAN142,Logistic Coord,Operations,Applied,2026-01-06,Passed
+CAN142,Logistic Coord,Operations,Screening,2026-02-16,Active
+CAN143,Backend Dev,Tech,Applied,2026-01-11,Rejected
+CAN144,HR Admin,HR,Applied,2026-02-10,Rejected
+CAN145,Logistic Coord,Operations,Applied,2026-02-08,Passed
+CAN145,Logistic Coord,Operations,Screening,2026-02-12,Passed
+CAN145,Logistic Coord,Operations,Interview,2026-02-17,Active
+CAN146,Ops Manager,Operations,Applied,2026-02-09,Passed
+CAN146,Ops Manager,Operations,Screening,2026-02-12,Rejected
+CAN147,Finance Analyst,Finance,Applied,2026-01-13,Rejected
+CAN148,Ops Manager,Operations,Applied,2026-02-22,Active
+CAN149,Finance Analyst,Finance,Applied,2025-12-19,Passed
+CAN149,Finance Analyst,Finance,Screening,2025-12-23,Rejected
+CAN150,Accountant,Finance,Applied,2026-02-04,Passed
+CAN150,Accountant,Finance,Screening,2026-02-08,Passed
+CAN150,Accountant,Finance,Interview,2026-02-20,Active
+CAN151,CFO,Finance,Applied,2026-02-16,Active
+CAN152,HR Mgr,HR,Applied,2026-02-22,Active
+CAN153,Accountant,Finance,Applied,2026-02-15,Active
+CAN154,Recruitment Spec,HR,Applied,2025-12-22,Passed
+CAN154,Recruitment Spec,HR,Screening,2025-12-25,Passed
+CAN154,Recruitment Spec,HR,Interview,2025-12-27,Passed
+CAN154,Recruitment Spec,HR,Offering,2025-12-29,Passed
+CAN154,Recruitment Spec,HR,Hired,2026-01-02,Hired
+CAN155,Finance Analyst,Finance,Applied,2025-12-15,Passed
+CAN155,Finance Analyst,Finance,Screening,2025-12-19,Passed
+CAN155,Finance Analyst,Finance,Interview,2025-12-20,Passed
+CAN155,Finance Analyst,Finance,Offering,2025-12-23,Passed
+CAN155,Finance Analyst,Finance,Hired,2025-12-24,Hired
+CAN156,Tech Lead,Tech,Applied,2026-02-14,Active
+CAN157,Recruitment Spec,HR,Applied,2026-01-13,Rejected
+CAN158,Frontend Dev,Tech,Applied,2026-01-01,Passed
+CAN158,Frontend Dev,Tech,Screening,2026-01-02,Passed
+CAN158,Frontend Dev,Tech,Interview,2026-01-04,Rejected
+CAN159,Backend Dev,Tech,Applied,2026-01-21,Passed
+CAN159,Backend Dev,Tech,Screening,2026-02-22,Active
+CAN160,Tech Lead,Tech,Applied,2026-01-29,Rejected
+CAN161,Tech Lead,Tech,Applied,2025-12-25,Rejected
+CAN162,HR Admin,HR,Applied,2026-01-24,Passed
+CAN162,HR Admin,HR,Screening,2026-01-26,Passed
+CAN162,HR Admin,HR,Interview,2026-01-28,Passed
+CAN162,HR Admin,HR,Offering,2026-01-30,Rejected
+CAN163,Account Mgr,Sales,Applied,2026-01-12,Passed
+CAN163,Account Mgr,Sales,Screening,2026-01-16,Passed
+CAN163,Account Mgr,Sales,Interview,2026-01-18,Passed
+CAN163,Account Mgr,Sales,Offering,2026-01-21,Passed
+CAN163,Account Mgr,Sales,Hired,2026-01-22,Hired
+CAN164,CFO,Finance,Applied,2025-12-18,Passed
+CAN164,CFO,Finance,Screening,2025-12-21,Passed
+CAN164,CFO,Finance,Interview,2025-12-22,Passed
+CAN164,CFO,Finance,Offering,2025-12-26,Passed
+CAN164,CFO,Finance,Hired,2025-12-30,Hired
+CAN165,Backend Dev,Tech,Applied,2026-01-21,Passed
+CAN165,Backend Dev,Tech,Screening,2026-01-22,Passed
+CAN165,Backend Dev,Tech,Interview,2026-01-26,Passed
+CAN165,Backend Dev,Tech,Offering,2026-02-22,Active
+CAN166,Tech Lead,Tech,Applied,2026-01-09,Rejected
+CAN167,Finance Analyst,Finance,Applied,2026-01-06,Passed
+CAN167,Finance Analyst,Finance,Screening,2026-01-08,Passed
+CAN167,Finance Analyst,Finance,Interview,2026-01-10,Passed
+CAN167,Finance Analyst,Finance,Offering,2026-01-11,Passed
+CAN167,Finance Analyst,Finance,Hired,2026-01-14,Hired
+CAN168,HR Mgr,HR,Applied,2025-12-24,Passed
+CAN168,HR Mgr,HR,Screening,2025-12-26,Rejected
+CAN169,Account Mgr,Sales,Applied,2026-01-28,Rejected
+CAN170,VP Sales,Sales,Applied,2026-01-03,Passed
+CAN170,VP Sales,Sales,Screening,2026-01-04,Passed
+CAN170,VP Sales,Sales,Interview,2026-01-07,Passed
+CAN170,VP Sales,Sales,Offering,2026-02-15,Active
+CAN171,Ops Staff,Operations,Applied,2026-01-06,Passed
+CAN171,Ops Staff,Operations,Screening,2026-02-18,Active
+CAN172,Backend Dev,Tech,Applied,2025-12-30,Passed
+CAN172,Backend Dev,Tech,Screening,2026-01-02,Passed
+CAN172,Backend Dev,Tech,Interview,2026-02-17,Active
+CAN173,Sales Exec,Sales,Applied,2025-12-20,Rejected
+CAN174,Recruitment Spec,HR,Applied,2025-12-22,Passed
+CAN174,Recruitment Spec,HR,Screening,2025-12-23,Passed
+CAN174,Recruitment Spec,HR,Interview,2025-12-27,Rejected
+CAN175,Recruitment Spec,HR,Applied,2026-01-05,Passed
+CAN175,Recruitment Spec,HR,Screening,2026-01-06,Passed
+CAN175,Recruitment Spec,HR,Interview,2026-01-09,Passed
+CAN175,Recruitment Spec,HR,Offering,2026-02-14,Active
+CAN176,Recruitment Spec,HR,Applied,2026-02-09,Passed
+CAN176,Recruitment Spec,HR,Screening,2026-02-11,Passed
+CAN176,Recruitment Spec,HR,Interview,2026-02-13,Passed
+CAN176,Recruitment Spec,HR,Offering,2026-02-14,Passed
+CAN176,Recruitment Spec,HR,Hired,2026-02-16,Hired
+CAN177,Account Mgr,Sales,Applied,2026-01-22,Rejected
+CAN178,Account Mgr,Sales,Applied,2026-01-19,Passed
+CAN178,Account Mgr,Sales,Screening,2026-01-23,Rejected
+CAN179,Ops Staff,Operations,Applied,2026-02-21,Active
+CAN180,HR Admin,HR,Applied,2026-02-10,Passed
+CAN180,HR Admin,HR,Screening,2026-02-11,Passed
+CAN180,HR Admin,HR,Interview,2026-02-15,Active
